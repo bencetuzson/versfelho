@@ -1,2 +1,3 @@
-# versfelho
- Versfelhő
+# Versfelhő
+ **Server port:** 2536<br>
+ **Server start:** "npm start"
