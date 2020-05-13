@@ -6,7 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Versfelhő</title>
     
-    <link rel="stylesheet" href="style.css"></head><body style="color: rgb(0, 0, 0); background-color: rgb(153, 153, 153);" alink="#000099" link="#000099" vlink="#990099">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="nav.css">
+  </head><body alink="#000099" link="#000099" vlink="#990099">
 <table style="text-align: left; width: 100%;" border="0" cellpadding="10" cellspacing="0">
   <tbody>
     <tr>
@@ -16,15 +19,25 @@
           <tr>
             <td style="vertical-align: top;">
             <ul>
-              <li><a href="index.html">Kezdőlap</a></li>
-              <li><a href="tuzsi.html">Tuzsi</a></li>
+              <li class="navItem" id="KezdolapButton">Kezdőlap</li>
+              <li class="navItem" id="TuzsiButton">Tuzsi</li>
             </ul>
             </td>
           </tr>
         </tbody>
       </table>
       </td>
-      <td style="vertical-align: top; text-align: center;"><img style="width: 997px; height: 501px;" alt="" src="wordart.png"></td>
+      <td style="vertical-align: top;">
+        <div class="page" id="KezdolapPage">
+          alma
+        </div>
+        <div class="page" id="TuzsiPage">
+          alma2
+        </div>
+        <div class="page" id="ErrorPage" style="color: red;"><h1>Error!</h1> <!--Eredeti törölve az előzményekből-->
+          Hash not found!
+        </div>
+      </td>
     </tr>
   </tbody>
 </table>

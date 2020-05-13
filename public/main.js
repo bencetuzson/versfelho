@@ -21,7 +21,7 @@ function setupPage() {
             }
         });*/
     } else if (window.location.hash == "") {
-        hashChange("ANovenyrolPage", "ANovenyrolButton");
+        hashChange("KezdolapPage", "KezdolapButton");
     }
     console.log("Page loaded.");
     document.querySelectorAll(".navItem").forEach(item => {
