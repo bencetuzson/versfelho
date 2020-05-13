@@ -1,4 +1,15 @@
 body, head {
-    color: #000000;
+    color: #ffffff;
     background-color: rgb(153, 153, 153);
+}
+
+weblink {
+    font-family: monospace;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 2vw;
+    font-weight: bold;
+    text-decoration: underline;
 }
