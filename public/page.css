@@ -1,7 +1,8 @@
 .page {
     display: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: 1%;
+    font-size: 0.8vw;
+    margin-left: 1vw;
     /*text-align: justify;*/
 }
 

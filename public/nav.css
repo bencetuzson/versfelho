@@ -2,11 +2,11 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 100%;
+    /*width: 100%;*/
     background-color: gray;
-    border-radius: 3px;
+    border-radius: 0.5vw;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    line-height: 90%;
+    /*line-height: 100%;*/
 }
 
 .navItem {
@@ -14,11 +14,11 @@ ul {
     /*display: inline-block;*/
     cursor: pointer;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 100%;
+    font-size: 1vw;
     /*padding-bottom: 3px;*/
     display: block;
     color: white;
-    padding: 8px 16px;
+    padding: 1.4vw 2.8vw;
     text-decoration: none;
 }
 
@@ -34,14 +34,14 @@ ul {
     border: 10px #000000;*/
     color: #000000;
     font-weight: bold;
-    border-radius: 3px;
+    border-radius: 0.5vw;
     /*border-color: gray solid;
     border-style: solid;
     border-left: 10px;
     border-right: 10px;*/
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-    margin-left: -3px;
-    margin-right: -3px;
+    margin-left: -0.5vw;
+    margin-right: -0.5vw;
 }
 
 .activeNavItem:hover {
@@ -50,14 +50,14 @@ ul {
 }
 
 .navUp {
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    border-top-left-radius: 0.5vw;
+    border-top-right-radius: 0.5vw;
     /*border-bottom: solid #000000 1px;*/
 }
 
 .navDown {
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 0.5vw;
+    border-bottom-right-radius: 0.5vw;
 }
 
 /*.navCenter {
@@ -69,6 +69,12 @@ ul {
     width: 8%;
     text-align: center;
     background-color: rgb(204, 204, 204);
-    border-radius: 5px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1vw;
+    box-shadow: 0 2.7vw 5.4vw 0 rgba(0, 0, 0, 0.2), 0 5vw 13.3vw 0 rgba(0, 0, 0, 0.19);
+}
+
+.borderIn {
+    text-align: left;
+    width: 100%;
+    padding: 1vw;
 }
