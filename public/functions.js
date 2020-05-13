@@ -79,15 +79,15 @@ function hashToID(type) {
     return window.location.hash.replace("#", "").concat(type);
 }
 /**
- * Átírja az oldal címét "A parlagfű - " + az ID típusának a nevére
+ * Átírja az oldal címét "Versfelhő - " + az ID típusának a nevére
  * @param {String}  type ID típusa
  */
 function changeTitle(type) {
-    document.title = "A parlagfű - " + document.getElementById(hashToID(type)).innerHTML;
+    document.title = "Versfelhő - " + document.getElementById(hashToID(type)).innerHTML;
 }
 /**
- * Átírja az oldal címét "A parlagfű - Error!"-ra
+ * Átírja az oldal címét "Versfelhő - Error!"-ra
  */
 function errorTitle() {
-    document.title = "A parlagfű - Error!";
+    document.title = "Versfelhő - Error!";
 }
