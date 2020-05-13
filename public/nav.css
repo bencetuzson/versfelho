@@ -2,11 +2,11 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    /*width: 100%;*/
+    width: 20vw;
     background-color: gray;
     border-radius: 0.5vw;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    /*line-height: 100%;*/
+    line-height: 80%;
 }
 
 .navItem {
@@ -14,7 +14,7 @@ ul {
     /*display: inline-block;*/
     cursor: pointer;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1vw;
+    font-size: 1.75vw;
     /*padding-bottom: 3px;*/
     display: block;
     color: white;
