@@ -5,7 +5,7 @@
  * @param {*} event Esemény
  */
 function navClick(event) {
-    console.log(event);
+    //console.log(event);
     activateNavItem(event.target.id);
     activatePage(event.target.id.replace("Button", "Page"));
 }
@@ -18,7 +18,7 @@ function activateNavItem(navID) {
         item.classList.remove("activeNavItem");
     });
     if (window.location.hash != "#Error") {
-        console.log(navID);
+        //console.log(navID);
         document.getElementById(navID).classList.add("activeNavItem");
     }
 }
@@ -39,7 +39,7 @@ function activatePage(pageID) {
  * @param {String} nav Gomb
  */
 function hashPageChange(page, nav) {
-    console.log(nav + "1");
+    //console.log(nav + "1");
     hashChange(hashToID(page), hashToID(nav));
 }
 /**
@@ -49,7 +49,7 @@ function hashPageChange(page, nav) {
  */
 function hashChange(page, nav) {
     activatePage(page);
-    console.log(nav);
+    //console.log(nav);
     activateNavItem(nav);
     //console.log(nav);
 }
