@@ -25,7 +25,6 @@
 .navItem:hover {
     color: rgb(255, 216, 109);
     background-color: rgb(140, 140, 140);
-    border-radius: 0.5vw;
 }  
 
 .activeNavItem {

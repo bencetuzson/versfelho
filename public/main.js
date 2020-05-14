@@ -44,7 +44,7 @@ function setupPage() {
         //console.log(window.location.hash.replace("#", "").concat("Button"));
     });
     document.getElementById("generateErrorButton").addEventListener("click", () => { 
-        window.location.hash = "sajt"; 
+        window.location.hash = "GeneratingError"; 
     });
     /*document.querySelectorAll(".hashSelect").forEach(item => {
         item.addEventListener("change", hashList);
