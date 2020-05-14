@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Versfelhő</title>
-    
+
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="page.css">
     <link rel="stylesheet" href="nav.css"></head><body alink="#000099" link="#000099" vlink="#990099">
@@ -46,9 +46,9 @@
             <option value="Info">#Info</option>
             <option value="Error">#Error</option>
           </select><br>
-          <button type="button" onclick="window.location.hash = 0" style="color: red;">Generate Error</button> (sets hash to 0)
+          <button type="button" id="generateErrorButton">Generate Error</button> (sets hash to 0)
         </div>
-        <div class="page " id="ErrorPage" style="color: red;"><h1>Error!</h1> <!--Eredeti törölve az előzményekből-->
+        <div class="page" id="ErrorPage" style="color: red;"><h1>Error!</h1> <!--Eredeti törölve az előzményekből-->
           Hash not found!
         </div>
       <br>
@@ -57,7 +57,8 @@
   </tbody>
 </table>
 <br>
-    
-<script src="main.js"></script>
+
 <script src="functions.js"></script>
+<script src="init.js"></script>
+<script src="main.js"></script>
 </body></html>
