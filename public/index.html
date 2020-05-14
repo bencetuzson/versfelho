@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Versfelhő</title>
-
+    
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="page.css">
     <link rel="stylesheet" href="nav.css"></head><body alink="#000099" link="#000099" vlink="#990099">
@@ -37,9 +37,18 @@
         </div>
         <div class="page" id="InfoPage"><h1>Info:</h1>
           <b>Creator: </b>Bence Tuzson<br>
-          <b>Repository: </b><a target="_blank" href="https://github.com/bencetuzson/versfelho">https://github.com/bencetuzson/versfelho</a>
+          <b>Repository: </b><a target="_blank" href="https://github.com/bencetuzson/versfelho">https://github.com/bencetuzson/versfelho</a><br>
+          <b>Hashes: </b>
+          <select id="hashSelect" onchange="hashList()">
+            <option value="default" selected disabled hidden>--Please choose an option--</option>
+            <option value="Kezdolap">#Kezdolap</option>
+            <option value="Tuzsi">#Tuzsi</option>
+            <option value="Info">#Info</option>
+            <option value="Error">#Error</option>
+          </select><br>
+          <button type="button" onclick="window.location.hash = 0" style="color: red;">Generate Error</button> (sets hash to 0)
         </div>
-        <div class="page" id="ErrorPage" style="color: red;"><h1>Error!</h1> <!--Eredeti törölve az előzményekből-->
+        <div class="page " id="ErrorPage" style="color: red;"><h1>Error!</h1> <!--Eredeti törölve az előzményekből-->
           Hash not found!
         </div>
       <br>
@@ -48,8 +57,7 @@
   </tbody>
 </table>
 <br>
-
-<script src="functions.js"></script>
-<script src="init.js"></script>
+    
 <script src="main.js"></script>
+<script src="functions.js"></script>
 </body></html>

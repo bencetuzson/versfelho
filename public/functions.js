@@ -5,9 +5,25 @@
  * @param {*} event Esemény
  */
 function navClick(event) {
-    window.location.hash = event.target.id.replace("Button", "");
-};
-
+    //console.log(event);
+    activateNavItem(event.target.id);
+    activatePage(event.target.id.replace("Button", "Page"));
+}
+/**
+ * 
+ */
+function hashList() {
+    //console.log(document.getElementById("hashSelect").value);
+    window.location.hash = document.getElementById("hashSelect").value;
+    var selectElement = document.getElementById("hashSelect");
+    var selectOptions = selectElement.options;
+    for (var opt, j = 0; opt = selectOptions[j]; j++) {
+        if (opt.value == "default") {
+            selectElement.selectedIndex = j;
+            break;
+        }
+    }
+}
 /**
  * Aktiválja a gombot
  * @param {String} navID Gomb ID
@@ -21,7 +37,6 @@ function activateNavItem(navID) {
         document.getElementById(navID).classList.add("activeNavItem");
     }
 }
-
 /**
  * Aktiválja az oldalt
  * @param {String} pageID Oldal ID
@@ -31,8 +46,8 @@ function activatePage(pageID) {
         item.classList.remove("activePage");
     });
     document.getElementById(pageID).classList.add("activePage");
-};
-
+    location.hash = pageID.replace("Page", "");
+}
 /**
  * Hash-ből aktiválja az oldalt és a gombot
  * @param {String} page Oldal
@@ -42,7 +57,6 @@ function hashPageChange(page, nav) {
     //console.log(nav + "1");
     hashChange(hashToID(page), hashToID(nav));
 }
-
 /**
  * Aktiválja az oldalt és a gombot
  * @param {String} page Oldal
@@ -54,18 +68,17 @@ function hashChange(page, nav) {
     activateNavItem(nav);
     //console.log(nav);
 }
-
 /**
  * Hibakezelés, ha érvénytelen a hash. Aktiválja az ErrorPage-et és átírja az oldal címét "A parlagfű - Error!"-ra
  */
 function error() {
+    //location.hash = "Error";
     activatePage("ErrorPage");
     errorTitle();
     document.querySelectorAll(".navItem").forEach(item => {
         item.classList.remove("activeNavItem");
     });
 }
-
 /**
  * Kiírja konzolba a hibaüzenetet ("Error! Hash not found!")
  */
@@ -77,10 +90,9 @@ function errorMessage() {
  * Leszedi a hash-t és a megadott típust adja hozzá, így visszaadja ID-vá alakítva
  * @param {String}  type ID típusa
  */
-function hashToID(type) {
+function hashToID(type) { 
     return window.location.hash.replace("#", "").concat(type);
 }
-
 /**
  * Átírja az oldal címét "Versfelhő - " + az ID típusának a nevére
  * @param {String}  type ID típusa
@@ -88,7 +100,6 @@ function hashToID(type) {
 function changeTitle(type) {
     document.title = "Versfelhő - " + document.getElementById(hashToID(type)).innerHTML;
 }
-
 /**
  * Átírja az oldal címét "Versfelhő - Error!"-ra
  */
