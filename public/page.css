@@ -10,3 +10,7 @@
 .activePage {
     display: block;
 }
+
+#generateErrorButton {
+    color: red;
+}
