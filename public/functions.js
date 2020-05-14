@@ -10,6 +10,21 @@ function navClick(event) {
     activatePage(event.target.id.replace("Button", "Page"));
 }
 /**
+ * 
+ */
+function hashList() {
+    //console.log(document.getElementById("hashSelect").value);
+    window.location.hash = document.getElementById("hashSelect").value;
+    var selectElement = document.getElementById("hashSelect");
+    var selectOptions = selectElement.options;
+    for (var opt, j = 0; opt = selectOptions[j]; j++) {
+        if (opt.value == "default") {
+            selectElement.selectedIndex = j;
+            break;
+        }
+    }
+}
+/**
  * Aktiválja a gombot
  * @param {String} navID Gomb ID
  */

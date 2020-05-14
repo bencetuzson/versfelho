@@ -20,8 +20,8 @@
             <td style="vertical-align: top;">
             <ul class="navBar">
               <li class="navItem navUp" id="KezdolapButton">Kezdőlap</li>
-              <li class="navItem navDown" id="TuzsiButton">Tuzsi</li>
-              <li class="navItem navCenter" id="InfoButton">Info</li>
+              <li class="navItem navCenter" id="TuzsiButton">Tuzsi</li>
+              <li class="navItem navDown" id="InfoButton">Info</li>
             </ul>
             </td>
           </tr>
@@ -35,9 +35,18 @@
         <div class="page" id="TuzsiPage">
           alma
         </div>
-        <div class="page" id="InfoPage"><h1>Info:</h1>
+        <div class="page" id="InfoPage" style="line-height: 1.7vw;"><h1>Info:</h1>
           <b>Creator: </b>Bence Tuzson<br>
-          <b>Repository: </b><a target="_blank" href="https://github.com/bencetuzson/versfelho">https://github.com/bencetuzson/versfelho</a>
+          <b>Repository: </b><a target="_blank" href="https://github.com/bencetuzson/versfelho">https://github.com/bencetuzson/versfelho</a><br>
+          <b>Hashes: </b>
+          <select id="hashSelect" onchange="hashList()">
+            <option value="default" selected disabled hidden>--Please choose an option--</option>
+            <option value="Kezdolap">#Kezdolap</option>
+            <option value="Tuzsi">#Tuzsi</option>
+            <option value="Info">#Info</option>
+            <option value="Error">#Error</option>
+          </select><br>
+          <button type="button" onclick="window.location.hash = 0" style="color: red;">Generate Error</button> (sets hash to 0)
         </div>
         <div class="page " id="ErrorPage" style="color: red;"><h1>Error!</h1> <!--Eredeti törölve az előzményekből-->
           Hash not found!

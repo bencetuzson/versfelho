@@ -43,4 +43,7 @@ function setupPage() {
         //console.log(document.getElementById(hashToID("Button")).innerHTML);
         //console.log(window.location.hash.replace("#", "").concat("Button"));
     });
+    /*document.querySelectorAll(".hashSelect").forEach(item => {
+        item.addEventListener("change", hashList);
+    });*/
 }
