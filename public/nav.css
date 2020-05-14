@@ -5,7 +5,7 @@
     width: 20vw;
     background-color: gray;
     border-radius: 0.5vw;
-    box-shadow: 0 0.20833333333333334vw 0.4166666666666667vw 0 rgba(0, 0, 0, 0.2), 0 0.3125vw 1.0416666666666665vw 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     line-height: 80%;
 }
 
@@ -25,6 +25,7 @@
 .navItem:hover {
     color: rgb(255, 216, 109);
     background-color: rgb(140, 140, 140);
+    border-radius: 0.5vw;
 }  
 
 .activeNavItem {
@@ -39,7 +40,7 @@
     border-style: solid;
     border-left: 10px;
     border-right: 10px;*/
-    box-shadow: 0 0.20833333333333334vw 0.4166666666666667vw 0 rgba(0, 0, 0, 0.2), 0 0.3125vw 1.0416666666666665vw 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
     margin-left: -0.5vw;
     margin-right: -0.5vw;
 }
@@ -55,17 +56,7 @@
     /*border-bottom: solid #000000 1px;*/
 }
 
-.navUp:hover {
-    border-top-left-radius: 0.5vw;
-    border-top-right-radius: 0.5vw;
-}
-
 .navDown {
-    border-bottom-left-radius: 0.5vw;
-    border-bottom-right-radius: 0.5vw;
-}
-
-.navDown:hover {
     border-bottom-left-radius: 0.5vw;
     border-bottom-right-radius: 0.5vw;
 }
@@ -80,7 +71,7 @@
     text-align: center;
     background-color: rgb(204, 204, 204);
     border-radius: 1vw;
-    box-shadow: 0 0.20833333333333334vw 0.4166666666666667vw 0 rgba(0, 0, 0, 0.2), 0 0.3125vw 1.0416666666666665vw 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 2.7vw 5.4vw 0 rgba(0, 0, 0, 0.2), 0 5vw 13.3vw 0 rgba(0, 0, 0, 0.19);
 }
 
 .borderIn {
