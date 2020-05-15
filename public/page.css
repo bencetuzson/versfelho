@@ -4,6 +4,7 @@
     font-size: 1vw;
     margin-left: 1vw;
     margin-top: 1vw;
+    vertical-align: top;
     /*text-align: justify;*/
 }
 
@@ -12,5 +13,14 @@
 }
 
 #generateErrorButton {
+    color: red;
+    font-size: 1vw;
+}
+
+#hashSelect{
+    font-size: 1vw;
+}
+
+#ErrorPage {
     color: red;
 }

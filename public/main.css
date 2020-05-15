@@ -3,6 +3,10 @@ body, head {
     background-color: rgb(153, 153, 153);
 }
 
+#navSide {
+    vertical-align: top;
+}
+
 weblink {
     font-family: monospace;
     font-style: italic;

@@ -5,48 +5,104 @@
     width: 20vw;
     background-color: gray;
     border-radius: 0.5vw;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0.20833333333333334vw 0.4166666666666667vw 0 rgba(0, 0, 0, 0.2), 0 0.3125vw 1.0416666666666665vw 0 rgba(0, 0, 0, 0.19);
     line-height: 80%;
 }
 
 .navItem {
     text-align: center;
     /*display: inline-block;*/
-    cursor: pointer;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.75vw;
     /*padding-bottom: 3px;*/
     display: block;
-    color: white;
     padding: 1.4vw 2.8vw;
     text-decoration: none;
 }
 
-.navItem:hover {
+.nonActiveNavItem {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: gray;
+}
+
+.deactivatedNavItem.navUp {
+    animation: navDeactivateUp 0.5s;
+    animation-fill-mode: backwards;
+}
+
+.deactivatedNavItem.navCenter{
+    animation: navDeactivateCenter 0.5s;
+    animation-fill-mode: backwards;
+}
+
+.deactivatedNavItem.navDown{
+    animation: navDeactivateDown 0.5s;
+    animation-fill-mode: backwards;
+}
+
+.nonActiveNavItem:hover {
     color: rgb(255, 216, 109);
     background-color: rgb(140, 140, 140);
-}  
+}
+
+/*.nonActiveNavItem:hover {
+    animation: navHover 0.1s, navHoverText 0.1s;
+}
+
+.nonActiveNavItem:not(:hover) {
+    animation: navNotHover 0.1s, navNotHoverText 0.1s;
+}
+
+@keyframes navHover {
+    to {background-color: rgb(140, 140, 140);}
+}
+
+@keyframes navNotHover {
+    to {background-color: gray;}
+}
+
+@keyframes navHoverText {
+    to {color: rgb(255, 216, 109);}
+}
+
+@keyframes navNotHoverText {
+    to {color: #ffffff;}
+}*/
 
 .activeNavItem {
-    background-color: #ffffff/*#3d3d3d*/;
     cursor: default;
     /*border-bottom: 10px #ffffff;
     border: 10px #000000;*/
-    color: #000000;
-    font-weight: bold;
     border-radius: 0.5vw;
     /*border-color: gray solid;
     border-style: solid;
     border-left: 10px;
     border-right: 10px;*/
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0.20833333333333334vw 0.4166666666666667vw 0 rgba(0, 0, 0, 0.2), 0 0.3125vw 1.0416666666666665vw 0 rgba(0, 0, 0, 0.19);
     margin-left: -0.5vw;
     margin-right: -0.5vw;
+    animation: navActivate 0.5s;
+    animation-fill-mode: forwards;
 }
 
-.activeNavItem:hover {
-    color: #000000;
-    background-color: #ffffff;
+@keyframes navActivate {
+    to {background-color: #ffffff; color: #000000; font-weight: bold;}
+}
+
+@keyframes navDeactivateUp {
+    from {background-color: #ffffff; color: #000000; font-weight: bold; margin-left: -0.5vw; margin-right: -0.5vw; border-radius: 0.5vw;}
+    to {background-color: gray; color: #ffffff; font-weight: unset; margin-left: unset; margin-right: unset; border-bottom-left-radius: unset; border-bottom-right-radius: unset;}
+}
+
+@keyframes navDeactivateCenter {
+    from {background-color: #ffffff; color: #000000; font-weight: bold; margin-left: -0.5vw; margin-right: -0.5vw; border-radius: 0.5vw;}
+    to {background-color: gray; color: #ffffff; font-weight: unset; margin-left: unset; margin-right: unset; border-radius: unset;}
+}
+
+@keyframes navDeactivateDown {
+    from {background-color: #ffffff; color: #000000; font-weight: bold; margin-left: -0.5vw; margin-right: -0.5vw; border-radius: 0.5vw;}
+    to {background-color: gray; color: #ffffff; font-weight: unset; margin-left: unset; margin-right: unset; border-radius: 0.5vw; border-top-left-radius: unset; border-top-right-radius: unset;}
 }
 
 .navUp {
@@ -70,11 +126,18 @@
     text-align: center;
     background-color: rgb(204, 204, 204);
     border-radius: 1vw;
-    box-shadow: 0 2.7vw 5.4vw 0 rgba(0, 0, 0, 0.2), 0 5vw 13.3vw 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0.20833333333333334vw 0.4166666666666667vw 0 rgba(0, 0, 0, 0.2), 0 0.3125vw 1.0416666666666665vw 0 rgba(0, 0, 0, 0.19);
+    height: 0;
 }
 
 .borderIn {
     text-align: left;
     width: 100%;
+    padding: 1vw;
+    vertical-align: top;
+}
+
+.navMenu {
+    width: 0;
     padding: 1vw;
 }

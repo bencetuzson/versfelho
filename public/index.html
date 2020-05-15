@@ -10,19 +10,27 @@
 <table class='borderIn' border="0" cellpadding="0" cellspacing="0">
   <tbody>
     <tr>
+      <td style="width: 0px; height: 0px; vertical-align: top;">
+      <table>
+      <tbody>
+      <tr>
       <td class="borderOut">
       <table class="borderIn" border="0" cellpadding="0" cellspacing="0">
         <tbody>
           <tr>
             <td style="vertical-align: top;">
             <ul class="navBar">
-              <li class="navItem navUp" id="KezdolapButton">Kezdőlap</li>
-              <li class="navItem navCenter" id="TuzsiButton">Tuzsi</li>
-              <li class="navItem navDown" id="InfoButton">Info</li>
+              <li class="navItem navUp nonActiveNavItem" id="KezdolapButton">Kezdőlap</li>
+              <li class="navItem navCenter nonActiveNavItem" id="TuzsiButton">Tuzsi</li>
+              <li class="navItem navDown nonActiveNavItem" id="InfoButton">Info</li>
             </ul>
             </td>
           </tr>
         </tbody>
+      </table>
+      </td>
+      </tr>
+      </tbody>
       </table>
       </td>
       <td style="vertical-align: top;">
@@ -32,11 +40,11 @@
         <div class="page" id="TuzsiPage">
           alma
         </div>
-        <div class="page" id="InfoPage"><h1>Info:</h1>
+        <div class="page" id="InfoPage" style="line-height: 1.7vw;"><h1>Info:</h1>
           <b>Creator: </b>Bence Tuzson<br>
           <b>Repository: </b><a target="_blank" href="https://github.com/bencetuzson/versfelho">https://github.com/bencetuzson/versfelho</a><br>
           <b>Hashes: </b>
-          <select id="hashSelect" onchange="hashList()">
+          <select id="hashSelect">
             <option value="default" selected disabled hidden>--Please choose an option--</option>
             <option value="Kezdolap">#Kezdolap</option>
             <option value="Tuzsi">#Tuzsi</option>
@@ -45,11 +53,11 @@
           </select><br>
           <button type="button" id="generateErrorButton">Generate Error</button> (sets hash to <i>#GeneratingError</i>)
         </div>
-        <div class="page" id="ErrorPage" style="color: red;"><h1>Error!</h1> <!--Eredeti törölve az előzményekből-->
+        <div class="page" id="ErrorPage"><h1>Error!</h1> <!--Eredeti törölve az előzményekből-->
           Hash not found!
         </div>
       <br>
-</td>
+      </td>
     </tr>
   </tbody>
 </table>

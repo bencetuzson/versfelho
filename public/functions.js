@@ -6,24 +6,14 @@
  */
 function navClick(event) {
     //console.log(event);
+    document.querySelectorAll(".deactivatedNavItem").forEach(item => {
+        item.classList.remove("deactivatedNavItem");
+    });
+    document.querySelectorAll(".activeNavItem").forEach(item => {
+        item.classList.add("deactivatedNavItem");
+    });
     activateNavItem(event.target.id);
     activatePage(event.target.id.replace("Button", "Page"));
-}
-
-/**
- * 
- */
-function hashList() {
-    //console.log(document.getElementById("hashSelect").value);
-    window.location.hash = document.getElementById("hashSelect").value;
-    var selectElement = document.getElementById("hashSelect");
-    var selectOptions = selectElement.options;
-    for (var opt, j = 0; opt = selectOptions[j]; j++) {
-        if (opt.value == "default") {
-            selectElement.selectedIndex = j;
-            break;
-        }
-    }
 }
 
 /**
@@ -33,10 +23,19 @@ function hashList() {
 function activateNavItem(navID) {
     document.querySelectorAll(".navItem").forEach(item => {
         item.classList.remove("activeNavItem");
+        item.classList.add("nonActiveNavItem");
+        /*if (time >= 3) {
+            item.classList.add("deactivatedNavItem");
+        } else {
+            time++;
+        }
+        console.log(time);*/
     });
     if (window.location.hash != "#Error") {
         //console.log(navID);
         document.getElementById(navID).classList.add("activeNavItem");
+        document.getElementById(navID).classList.remove("nonActiveNavItem");
+        document.getElementById(navID).classList.remove("deactivatedNavItem");
     }
 }
 

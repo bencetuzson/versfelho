@@ -1,4 +1,7 @@
 "use strict";
+
+//var time = 0;
+
 window.addEventListener("load", setupPage);
 
 function setupPage() {
@@ -45,6 +48,17 @@ function setupPage() {
     });
     document.getElementById("generateErrorButton").addEventListener("click", () => { 
         window.location.hash = "GeneratingError"; 
+    });
+    document.getElementById("hashSelect").addEventListener("change", () => { 
+        window.location.hash = document.getElementById("hashSelect").value;
+        var selectElement = document.getElementById("hashSelect");
+        var selectOptions = selectElement.options;
+        for (var opt, j = 0; opt = selectOptions[j]; j++) {
+            if (opt.value == "default") {
+                selectElement.selectedIndex = j;
+                break;
+            }
+        }
     });
     /*document.querySelectorAll(".hashSelect").forEach(item => {
         item.addEventListener("change", hashList);
