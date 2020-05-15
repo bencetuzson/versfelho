@@ -46,29 +46,6 @@
     background-color: rgb(140, 140, 140);
 }
 
-/*.nonActiveNavItem:hover {
-    animation: navHover 0.1s, navHoverText 0.1s;
-}
-
-.nonActiveNavItem:not(:hover) {
-    animation: navNotHover 0.1s, navNotHoverText 0.1s;
-}
-
-@keyframes navHover {
-    to {background-color: rgb(140, 140, 140);}
-}
-
-@keyframes navNotHover {
-    to {background-color: gray;}
-}
-
-@keyframes navHoverText {
-    to {color: rgb(255, 216, 109);}
-}
-
-@keyframes navNotHoverText {
-    to {color: #ffffff;}
-}*/
 
 .activeNavItem {
     cursor: default;
@@ -104,6 +81,30 @@
     from {background-color: #ffffff; color: #000000; font-weight: bold; margin-left: -0.5vw; margin-right: -0.5vw; border-radius: 0.5vw;}
     to {background-color: gray; color: #ffffff; font-weight: unset; margin-left: unset; margin-right: unset; border-radius: 0.5vw; border-top-left-radius: unset; border-top-right-radius: unset;}
 }
+
+/*.nonActiveNavItem:hover {
+    animation: navHover 0.1s, navHoverText 0.1s;
+}
+
+.nonActiveNavItem:not(:hover) {
+    animation: navNotHover 0.1s, navNotHoverText 0.1s;
+}
+
+@keyframes navHover {
+    to {background-color: rgb(140, 140, 140);}
+}
+
+@keyframes navNotHover {
+    to {background-color: gray;}
+}
+
+@keyframes navHoverText {
+    to {color: rgb(255, 216, 109);}
+}
+
+@keyframes navNotHoverText {
+    to {color: #ffffff;}
+}*/
 
 .navUp {
     border-top-left-radius: 0.5vw;
