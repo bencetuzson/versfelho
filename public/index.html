@@ -35,7 +35,7 @@
       </td>
       <td id="PageSide">
         <div class="page" id="KezdolapPage">
-          <img src="wordart.png" style="width: 100%;">
+          <img src="wordart.png">
         </div>
         <div class="page" id="TuzsiPage">
           almácska
@@ -43,15 +43,16 @@
         <div class="page" id="InfoPage" style="line-height: 1.7vw;"><h1>Info:</h1>
           <b>Creator: </b>Bence Tuzson<br>
           <b>Repository: </b><a target="_blank" href="https://github.com/bencetuzson/versfelho">https://github.com/bencetuzson/versfelho</a><br>
+          <h2>For testing purposes:</h2>
           <b>Hashes: </b>
-          <select id="hashSelect">
+          <select id="HashSelect">
             <option value="default" selected disabled hidden>--Please choose an option--</option>
             <option value="Kezdolap">#Kezdolap</option>
             <option value="Tuzsi">#Tuzsi</option>
             <option value="Info">#Info</option>
             <option value="Error">#Error</option>
           </select><br>
-          <button type="button" id="generateErrorButton">Generate Error</button> (sets hash to <i>#GeneratingError</i>)
+          <button type="button" id="GenerateErrorButton">Generate Error</button> (sets hash to <i>#GeneratingError</i>)
         </div>
         <div class="page" id="ErrorPage"><h1>Error!</h1> <!--Eredeti törölve az előzményekből-->
           Hash not found!

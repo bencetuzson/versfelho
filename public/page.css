@@ -6,21 +6,44 @@
     margin-top: 1vw;
     vertical-align: top;
     /*text-align: justify;*/
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 
 .activePage {
     display: block;
+    animation: pageActivate 1s;
+    animation-fill-mode: forwards;
 }
 
-#generateErrorButton {
+.nonActivePage {
+    display: block;
+    animation: pageDeactivate 1s;
+    animation-fill-mode: forwards;
+}
+
+#GenerateErrorButton {
     color: red;
     font-size: 1vw;
 }
 
-#hashSelect{
+#HashSelect{
     font-size: 1vw;
 }
 
 #ErrorPage {
     color: red;
+}
+
+@keyframes pageActivate {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes pageDeactivate {
+    from {opacity: 1}
+    to {opacity: 0}
 }
