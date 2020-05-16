@@ -3,8 +3,21 @@ body, head {
     background-color: rgb(153, 153, 153);
 }
 
-#navSide {
+#MainTable {
+    text-align: left;
+    width: 100%;
+    padding: 1vw;
     vertical-align: top;
+    horiz-align: left;
+}
+
+#NavSide {
+    vertical-align: top;
+}
+
+#PageSide {
+    vertical-align: top;
+    width: 100%;
 }
 
 weblink {

@@ -6,14 +6,29 @@
  */
 function navClick(event) {
     //console.log(event);
-    document.querySelectorAll(".deactivatedNavItem").forEach(item => {
-        item.classList.remove("deactivatedNavItem");
-    });
-    document.querySelectorAll(".activeNavItem").forEach(item => {
-        item.classList.add("deactivatedNavItem");
-    });
-    activateNavItem(event.target.id);
-    activatePage(event.target.id.replace("Button", "Page"));
+    //console.log(event.target.classList.contains("activeNavItem"));
+    if (event.target.classList.contains("activeNavItem") == false) {
+        document.querySelectorAll(".deactivatedNavItem").forEach(item => {
+            item.classList.remove("deactivatedNavItem");
+        });
+        //console.log(document.getElementById(hashToID("Button")));
+        //console.log(document.getElementById(hashToID("Button")).classList.contains("activeNavItem"));
+        //if (document.getElementById(hashToID("Button")).classList.contains("activeNavItem") == false) {
+        document.querySelectorAll(".nonActivePage").forEach(item => {
+            item.classList.remove("nonActivePage");
+        });
+        //}
+        document.querySelectorAll(".activeNavItem").forEach(item => {
+            item.classList.add("deactivatedNavItem");
+        });
+        document.querySelectorAll(".activePage").forEach(item => {
+            item.classList.add("nonActivePage");
+        });
+        //console.log(document.getElementById(hashToID("Button")).classList.contains("activeNavItem"));
+        activateNavItem(event.target.id);
+        activatePage(event.target.id.replace("Button", "Page"));
+        //console.log(document.getElementById(hashToID("Button")).classList.contains("activeNavItem"));
+    }
 }
 
 /**
