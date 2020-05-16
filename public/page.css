@@ -76,7 +76,7 @@ img.tuzsiPageMarginImg {
 .tuzsiPageCell {
     vertical-align: middle;
     text-align: center;
-    width: 1%;
+    width: 0;
     background-color: white;
 }
 
