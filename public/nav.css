@@ -46,7 +46,6 @@
     background-color: rgb(140, 140, 140);
 }
 
-
 .activeNavItem {
     cursor: default;
     /*border-bottom: 10px #ffffff;
@@ -139,6 +138,5 @@
 }
 
 .navMenu {
-    width: 0;
-    padding: 1vw;
+    vertical-align: top;
 }

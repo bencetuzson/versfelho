@@ -15,13 +15,13 @@
 
 .activePage {
     display: block;
-    animation: pageActivate 1s;
+    animation: pageActivate 0.5s;
     animation-fill-mode: forwards;
 }
 
 .nonActivePage {
     display: block;
-    animation: pageDeactivate 1s;
+    animation: pageDeactivate 0.5s;
     animation-fill-mode: forwards;
 }
 
@@ -46,4 +46,45 @@
 @keyframes pageDeactivate {
     from {opacity: 1}
     to {opacity: 0}
+}
+
+img.hp {
+    width: 100%;
+}
+
+.tuzsiPageMarginCell {
+    vertical-align: middle;
+}
+
+img.tuzsiPageMarginImg {
+    width: 14vw;
+    vertical-align: middle;
+}
+
+.tuzsiPageMainTable {
+    text-align: left;
+    width: 100%;
+}
+
+.tuzsiPageTable {
+    text-align: left;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tuzsiPageCell {
+    vertical-align: middle;
+    text-align: center;
+    width: 1%;
+    background-color: white;
+}
+
+.tuzsiPagePoem {
+    vertical-align: center;
+    text-align: center;
+}
+
+.tuzsiPagePoemImg {
+    width: 15vw;
 }

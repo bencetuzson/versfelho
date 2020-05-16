@@ -46,12 +46,12 @@ function setupPage() {
         //console.log(document.getElementById(hashToID("Button")).innerHTML);
         //console.log(window.location.hash.replace("#", "").concat("Button"));
     });
-    document.getElementById("generateErrorButton").addEventListener("click", () => { 
+    document.getElementById("GenerateErrorButton").addEventListener("click", () => {
         window.location.hash = "GeneratingError"; 
     });
-    document.getElementById("hashSelect").addEventListener("change", () => { 
-        window.location.hash = document.getElementById("hashSelect").value;
-        var selectElement = document.getElementById("hashSelect");
+    document.getElementById("HashSelect").addEventListener("change", () => {
+        window.location.hash = document.getElementById("HashSelect").value;
+        var selectElement = document.getElementById("HashSelect");
         var selectOptions = selectElement.options;
         for (var opt, j = 0; opt = selectOptions[j]; j++) {
             if (opt.value == "default") {

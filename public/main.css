@@ -1,6 +1,7 @@
 body, head {
     color: #ffffff;
     background-color: rgb(153, 153, 153);
+    overflow-x: hidden;
 }
 
 #MainTable {
@@ -26,28 +27,18 @@ weblink {
     font-style: italic;
 }
 
-h1 {
+h3 {
     font-size: 2.5vw;
     font-weight: bold;
     text-decoration: underline;
     margin-top: 0;
 }
 
-h2 {
+h4 {
     font-size: 1.75vw;
     text-decoration: underline;
 }
 
-@keyframes pageActivate {
-    from {opacity: 0}
-    to {opacity: 1}
-}
-
-@keyframes pageDeactivate {
-    from {opacity: 1}
-    to {opacity: 0}
-}
-
-img {
-    width: 100%;
+poem {
+    font-size: 0.5vw;
 }
