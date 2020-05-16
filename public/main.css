@@ -3,6 +3,14 @@ body, head {
     background-color: rgb(153, 153, 153);
 }
 
+#MainTable {
+    text-align: left;
+    width: 0;
+    padding: 1vw;
+    vertical-align: top;
+    horiz-align: left;
+}
+
 #navSide {
     vertical-align: top;
 }
