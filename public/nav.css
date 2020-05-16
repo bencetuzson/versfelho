@@ -133,7 +133,7 @@
 
 .borderIn {
     text-align: left;
-    width: 0;
+    width: 100%;
     padding: 1vw;
     vertical-align: top;
 }
