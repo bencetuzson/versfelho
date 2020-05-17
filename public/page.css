@@ -34,6 +34,10 @@
     font-size: 1vw;
 }
 
+#InfoPage {
+    line-height: 1.7vw;
+}
+
 #ErrorPage {
     color: red;
 }
@@ -71,6 +75,10 @@ img.tuzsiPageMarginImg {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.tuzsiPageMainCell {
+    vertical-align: top;
 }
 
 .tuzsiPageCell {
