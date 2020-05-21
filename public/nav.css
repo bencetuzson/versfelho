@@ -6,7 +6,7 @@
     background-color: gray;
     border-radius: 0.5vw;
     box-shadow: 0 0.20833333333333334vw 0.4166666666666667vw 0 rgba(0, 0, 0, 0.2), 0 0.3125vw 1.0416666666666665vw 0 rgba(0, 0, 0, 0.19);
-    line-height: 80%;
+    line-height: 0.6vw;
 }
 
 .navItem {

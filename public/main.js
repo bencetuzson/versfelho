@@ -8,7 +8,7 @@ function setupPage() {
     //console.log(window.location.hash);
     if (document.getElementById(hashToID("Page")) === null && window.location.hash != "") {
         //console.log(document.getElementById(window.location.hash.replace("#", "").concat("Page")));
-        error;
+        error();
     } else if (window.location.hash != "") {
         if (window.location.hash == "#Error") {
             errorMessage();
@@ -51,9 +51,9 @@ function setupPage() {
     });
     document.getElementById("HashSelect").addEventListener("change", () => {
         window.location.hash = document.getElementById("HashSelect").value;
-        var selectElement = document.getElementById("HashSelect");
-        var selectOptions = selectElement.options;
-        for (var opt, j = 0; opt = selectOptions[j]; j++) {
+        let selectElement = document.getElementById("HashSelect");
+        let selectOptions = selectElement.options;
+        for (let opt, j = 0; opt = selectOptions[j]; j++) {
             if (opt.value == "default") {
                 selectElement.selectedIndex = j;
                 break;
